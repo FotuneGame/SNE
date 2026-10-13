@@ -26,23 +26,23 @@ if (!existsSync(outputDir)) mkdirSync(outputDir, { recursive: true });
 console.log('=== ЧАСТЬ 1: Скалярное уравнение ===\n');
 console.log('Уравнение: -3·lg(x) + x² − 2 = 0,  x ∈ [1; 5]\n');
 
-const { a, b, tolerance, maxIterations, monteCarloSamples } = input.part1;
+const { a, b, eps, maxIterations, monteCarloSamples } = input.part1;
 
 // 1. Метод половинного деления
-const resBisection = bisection(f, a, b, tolerance, maxIterations);
+const resBisection = bisection(f, a, b, eps, maxIterations);
 console.log(`Метод бисекции:    x = ${resBisection.root.toFixed(8)},  итераций: ${resBisection.iterations},  невязка: ${Math.abs(f(resBisection.root)).toExponential(3)}`);
 
 // 2. Метод секущих
-const resSecant = secant(f, a, b, tolerance, maxIterations);
+const resSecant = secant(f, a, b, eps, maxIterations);
 console.log(`Метод секущих:     x = ${resSecant.root.toFixed(8)},  итераций: ${resSecant.iterations},  невязка: ${Math.abs(f(resSecant.root)).toExponential(3)}`);
 
 // 3. Метод Монте-Карло
-const resMC = monteCarlo(f, a, b, tolerance, maxIterations, monteCarloSamples);
+const resMC = monteCarlo(f, a, b, eps, maxIterations, monteCarloSamples);
 console.log(`Метод Монте-Карло: x = ${resMC.root.toFixed(8)},  улучшений: ${resMC.iterations},  невязка: ${Math.abs(f(resMC.root)).toExponential(3)}`);
 
 // 4. Метод Ньютона
 const x0Newton = (a + b) / 2;
-const resNewton = newton(f, df, x0Newton, tolerance, maxIterations);
+const resNewton = newton(f, df, x0Newton, eps, maxIterations);
 console.log(`Метод Ньютона:     x = ${resNewton.root.toFixed(8)},  итераций: ${resNewton.iterations},  невязка: ${Math.abs(f(resNewton.root)).toExponential(3)}`);
 
 // SVG-график часть 1
@@ -67,7 +67,7 @@ console.log('\n=== ЧАСТЬ 2: Система нелинейных уравн�
 console.log('cos(y) + x = 1.5');
 console.log('2y - sin(x - 0.5) = 1\n');
 
-const resSystem = newtonSystem(F, J, input.part2.x0, input.part2.tolerance, input.part2.maxIterations);
+const resSystem = newtonSystem(F, J, input.part2.x0, input.part2.eps, input.part2.maxIterations);
 console.log(`Метод Ньютона (СНУ):  x = ${resSystem.root[0].toFixed(8)},  y = ${resSystem.root[1].toFixed(8)}`);
 console.log(`Итераций: ${resSystem.iterations},  невязка: ${norm2(F(resSystem.root)).toExponential(3)}`);
 

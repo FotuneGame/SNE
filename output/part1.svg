@@ -22,7 +22,7 @@
 <path d="M72,70.345L104.842,73.014L137.684,79.113L170.526,95.599L203.368,121.04L236.211,161.817L269.053,228.235" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
         <line x1="190" x2="218" y1="404" y2="404" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
         <text x="226" y="408">Секущие</text>
-<path d="M72,70.568L104.842,73.576L137.684,100.972L170.526,105.752L203.368,108.679L236.211,118.91L269.053,129.281L301.895,147.856L334.737,157.769" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 3"/>
+<path d="M72,76.384L104.842,76.636L137.684,82.465L170.526,87.491L203.368,91.677L236.211,97.271L269.053,99.065L301.895,111.489L334.737,135.052L367.579,151.374L400.421,160.161L433.263,162.723" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 3"/>
         <line x1="360" x2="388" y1="404" y2="404" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 3"/>
         <text x="396" y="408">Монте-Карло</text>
 <path d="M72,53.23L104.842,67.759L137.684,87.032L170.526,120.422L203.368,186.258L236.211,317.903" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="8 2"/>

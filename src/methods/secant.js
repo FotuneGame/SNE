@@ -2,7 +2,7 @@
  * Метод секущих
  * Находит корень уравнения f(x)=0, начиная с двух точек x0, x1
  */
-export function secant(f, x0, x1, tol, maxIter) {
+export function secant(f, x0, x1, eps, maxIter) {
   const history = [];
   let f0 = f(x0);
   let f1 = f(x1);
@@ -16,7 +16,7 @@ export function secant(f, x0, x1, tol, maxIter) {
 
     history.push({ iteration: i + 1, x: x2, residual });
 
-    if (residual < tol) {
+    if (residual < eps) {
       return { root: x2, iterations: i + 1, history };
     }
 

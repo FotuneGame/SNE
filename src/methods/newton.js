@@ -2,7 +2,7 @@
  * Метод Ньютона (касательных)
  * Находит корень уравнения f(x)=0, используя производную f'(x)
  */
-export function newton(f, df, x0, tol, maxIter) {
+export function newton(f, df, x0, eps, maxIter) {
   const history = [];
   let x = x0;
 
@@ -12,7 +12,7 @@ export function newton(f, df, x0, tol, maxIter) {
 
     history.push({ iteration: i + 1, x, residual });
 
-    if (residual < tol) {
+    if (residual < eps) {
       return { root: x, iterations: i + 1, history };
     }
 

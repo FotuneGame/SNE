@@ -2,7 +2,7 @@
  * Метод половинного деления (бисекции)
  * Находит корень уравнения f(x)=0 на отрезке [a, b]
  */
-export function bisection(f, a, b, tol, maxIter) {
+export function bisection(f, a, b, eps, maxIter) {
   const history = [];
 
   if (f(a) * f(b) > 0) {
@@ -16,7 +16,7 @@ export function bisection(f, a, b, tol, maxIter) {
 
     history.push({ iteration: i + 1, x: c, residual });
 
-    if (residual < tol || (b - a) / 2 < tol) {
+    if (residual < eps || (b - a) / 2 < eps) {
       return { root: c, iterations: i + 1, history };
     }
 

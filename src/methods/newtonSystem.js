@@ -8,7 +8,7 @@ import { norm2, solve2x2 } from '../helpers/index.js';
  * J  — функция, возвращающая матрицу Якоби [[dF1/dx, dF1/dy],[dF2/dx, dF2/dy]]
  * x0 — начальное приближение [x, y]
  */
-export function newtonSystem(F, J, x0, tol, maxIter) {
+export function newtonSystem(F, J, x0, eps, maxIter) {
   const history = [];
   let x = [...x0];
 
@@ -18,7 +18,7 @@ export function newtonSystem(F, J, x0, tol, maxIter) {
 
     history.push({ iteration: i + 1, x: [...x], residual });
 
-    if (residual < tol) {
+    if (residual < eps) {
       return { root: [...x], iterations: i + 1, history };
     }
 
