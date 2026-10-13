@@ -1,0 +1,19 @@
+{
+  "name": "sne",
+  "version": "1.0.0",
+  "description": "Практическая работа: решение нелинейных уравнений (бисекция, секущие, Монте-Карло, Ньютон, СНУ).",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.3"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "d3-array": "^3.2.4",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0"
+  },
+  "license": "MIT"
+}

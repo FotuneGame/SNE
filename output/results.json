@@ -1,0 +1,45 @@
+{
+  "part1": {
+    "equation": "-3*lg(x) + x^2 - 2 = 0",
+    "interval": [
+      1,
+      5
+    ],
+    "methods": {
+      "bisection": {
+        "root": 1.6217002868652344,
+        "iterations": 20,
+        "residual": 3.9821534070227926e-8
+      },
+      "secant": {
+        "root": 1.6217002634463809,
+        "iterations": 7,
+        "residual": 1.7320344936067045e-8
+      },
+      "monteCarlo": {
+        "root": 1.6217191776000979,
+        "improvements": 9,
+        "residual": 0.000046133560785754923,
+        "totalSamples": 100000
+      },
+      "newton": {
+        "root": 1.6217002705452088,
+        "iterations": 6,
+        "residual": 7.580602812140569e-13
+      }
+    }
+  },
+  "part2": {
+    "system": [
+      "cos(y) + x = 1.5",
+      "2y - sin(x - 0.5) = 1"
+    ],
+    "method": "Newton (system)",
+    "root": {
+      "x": 0.6645944783626538,
+      "y": 0.5819261517547285
+    },
+    "iterations": 4,
+    "residual": 4.844136011914872e-14
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" font-family="Arial, sans-serif" font-size="12">
+        <rect width="720" height="420" fill="#fff"/>
+        <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold">Скалярное уравнение: невязка от итерации</text>
+        <line x1="72" x2="696" y1="336" y2="336" stroke="#e5e7eb"/><text x="64" y="340" text-anchor="end">10⁻¹³</text>
+<line x1="72" x2="696" y1="294.85714285714283" y2="294.85714285714283" stroke="#e5e7eb"/><text x="64" y="298.85714285714283" text-anchor="end">10⁻¹¹</text>
+<line x1="72" x2="696" y1="253.7142857142857" y2="253.7142857142857" stroke="#e5e7eb"/><text x="64" y="257.71428571428567" text-anchor="end">10⁻⁹</text>
+<line x1="72" x2="696" y1="212.57142857142856" y2="212.57142857142856" stroke="#e5e7eb"/><text x="64" y="216.57142857142856" text-anchor="end">10⁻⁷</text>
+<line x1="72" x2="696" y1="171.4285714285714" y2="171.4285714285714" stroke="#e5e7eb"/><text x="64" y="175.4285714285714" text-anchor="end">10⁻⁵</text>
+<line x1="72" x2="696" y1="130.28571428571428" y2="130.28571428571428" stroke="#e5e7eb"/><text x="64" y="134.28571428571428" text-anchor="end">10⁻³</text>
+<line x1="72" x2="696" y1="89.14285714285715" y2="89.14285714285715" stroke="#e5e7eb"/><text x="64" y="93.14285714285715" text-anchor="end">10⁻¹</text>
+<line x1="72" x2="696" y1="48" y2="48" stroke="#e5e7eb"/><text x="64" y="52" text-anchor="end">10¹</text>
+        <text x="72" y="354" text-anchor="middle">0</text>
+<text x="236.21052631578945" y="354" text-anchor="middle">5</text>
+<text x="400.4210526315789" y="354" text-anchor="middle">10</text>
+<text x="564.6315789473684" y="354" text-anchor="middle">15</text>
+        <rect x="72" y="48" width="624" height="288" fill="none" stroke="#9ca3af"/>
+        <text x="360" y="382" text-anchor="middle">Номер итерации k</text>
+        <text x="16" y="210" text-anchor="middle" transform="rotate(-90 16 210)">|f(x)|</text>
+        <path d="M72,53.23L104.842,67.745L137.684,79.999L170.526,78.385L203.368,111.636L236.211,86.133L269.053,92.691L301.895,99.934L334.737,108.874L367.579,126.787L400.421,119.652L433.263,131.197L466.105,141.392L498.947,140.83L531.789,172.031L564.632,147.878L597.474,154.69L630.316,162.267L663.158,172.108L696,220.798" fill="none" stroke="#2563eb" stroke-width="2"/>
+        <line x1="20" x2="48" y1="404" y2="404" stroke="#2563eb" stroke-width="2"/>
+        <text x="56" y="408">Бисекция</text>
+<path d="M72,70.345L104.842,73.014L137.684,79.113L170.526,95.599L203.368,121.04L236.211,161.817L269.053,228.235" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+        <line x1="190" x2="218" y1="404" y2="404" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+        <text x="226" y="408">Секущие</text>
+<path d="M72,70.568L104.842,73.576L137.684,100.972L170.526,105.752L203.368,108.679L236.211,118.91L269.053,129.281L301.895,147.856L334.737,157.769" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 3"/>
+        <line x1="360" x2="388" y1="404" y2="404" stroke="#16a34a" stroke-width="2" stroke-dasharray="3 3"/>
+        <text x="396" y="408">Монте-Карло</text>
+<path d="M72,53.23L104.842,67.759L137.684,87.032L170.526,120.422L203.368,186.258L236.211,317.903" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="8 2"/>
+        <line x1="530" x2="558" y1="404" y2="404" stroke="#d97706" stroke-width="2" stroke-dasharray="8 2"/>
+        <text x="566" y="408">Ньютон</text>
+        </svg>

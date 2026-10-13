@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" font-family="Arial, sans-serif" font-size="12">
+        <rect width="720" height="420" fill="#fff"/>
+        <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold">СНУ: невязка от итерации (метод Ньютона)</text>
+        <line x1="72" x2="696" y1="336" y2="336" stroke="#e5e7eb"/><text x="64" y="340" text-anchor="end">10⁻¹⁴</text>
+<line x1="72" x2="696" y1="294.8571428571429" y2="294.8571428571429" stroke="#e5e7eb"/><text x="64" y="298.8571428571429" text-anchor="end">10⁻¹²</text>
+<line x1="72" x2="696" y1="253.7142857142857" y2="253.7142857142857" stroke="#e5e7eb"/><text x="64" y="257.71428571428567" text-anchor="end">10⁻¹⁰</text>
+<line x1="72" x2="696" y1="212.57142857142856" y2="212.57142857142856" stroke="#e5e7eb"/><text x="64" y="216.57142857142856" text-anchor="end">10⁻⁸</text>
+<line x1="72" x2="696" y1="171.4285714285714" y2="171.4285714285714" stroke="#e5e7eb"/><text x="64" y="175.4285714285714" text-anchor="end">10⁻⁶</text>
+<line x1="72" x2="696" y1="130.28571428571428" y2="130.28571428571428" stroke="#e5e7eb"/><text x="64" y="134.28571428571428" text-anchor="end">10⁻⁴</text>
+<line x1="72" x2="696" y1="89.14285714285712" y2="89.14285714285712" stroke="#e5e7eb"/><text x="64" y="93.14285714285712" text-anchor="end">10⁻²</text>
+<line x1="72" x2="696" y1="48" y2="48" stroke="#e5e7eb"/><text x="64" y="52" text-anchor="end">10⁰</text>
+        <text x="72" y="354" text-anchor="middle">0</text>
+<text x="280" y="354" text-anchor="middle">1</text>
+<text x="488" y="354" text-anchor="middle">2</text>
+<text x="696" y="354" text-anchor="middle">3</text>
+        <rect x="72" y="48" width="624" height="288" fill="none" stroke="#9ca3af"/>
+        <text x="360" y="382" text-anchor="middle">Номер итерации k</text>
+        <text x="16" y="210" text-anchor="middle" transform="rotate(-90 16 210)">‖F(x,y)‖₂</text>
+        <path d="M72,66.764L280,100.246L488,168.858L696,321.904" fill="none" stroke="#7c3aed" stroke-width="2"/>
+        <line x1="275" x2="303" y1="404" y2="404" stroke="#7c3aed" stroke-width="2"/>
+        <text x="311" y="408">Ньютон (СНУ)</text>
+        </svg>
